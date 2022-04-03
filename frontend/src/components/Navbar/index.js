@@ -1,7 +1,7 @@
-import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew';
 import navImg from '../images/navImg.png';
 
-function Navbar() {
+//상단바 컴포넌트
+export default function Navbar() {
   return (
     <div className='sticky top-0 z-50 md:h-16 bg-yellow-100 flex items-center p-2 lg:px-5 font-bold text-xl shadow-md'>
       <div className='flex items-center'>
@@ -12,4 +12,3 @@ function Navbar() {
   )
 }
 
-export default Navbar;
