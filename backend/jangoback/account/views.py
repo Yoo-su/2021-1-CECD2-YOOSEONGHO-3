@@ -51,10 +51,9 @@ def signin(request):
     data=json.loads(request.body)
     userId, password = data['userId'], data['password']
 
-    #일단은 보안고려 없이 간단히 아이디와 비밀번호가 일치하면 로그인시킨다.
+    #간단히 아이디와 비밀번호가 일치하면 로그인시킨다.
     user=Account.objects.filter(userId=userId).values()
     if user:
-        #이제 여기서 유저 정보를 사용하여 추천할만한 복지정보를 필터링해 제공해야한다.
 
         #로그인 처리
         if user[0]['password']==password:
